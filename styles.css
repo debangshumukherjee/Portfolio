@@ -34,6 +34,11 @@ nav {
     height: 50px;
     border-radius: 50%;
 }
+.navbar img:hover {
+    transform: scale(1.5);
+    transition-duration: 500ms;
+    cursor: pointer;
+}
 
 .navbar ul {
     list-style: none;
@@ -54,6 +59,7 @@ nav {
 
 .navbar ul li a:hover {
     color: #ffd700; /* Change color on hover */
+    
 }
 
 .greeting img{
@@ -61,21 +67,32 @@ nav {
     width: 500px;
     border-radius: 50px;
     object-fit: cover;
+    cursor: pointer;
 }
+.greeting img:hover{
+    transform: scale(1.10);
+    transition-duration: 500ms;
+}
+
 .about img{
     height: 450px;
     width: 450px;
     border-radius: 50px;
     border: solid black 2px;
     object-fit: cover;
-    
+    cursor: pointer;
+}
+.about img:hover{
+    object-fit: cover;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 500ms;
 }
 
 .about{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: rebeccapurple; */
 }
 
 .about p{
@@ -180,9 +197,26 @@ h2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center; /* Center text */
 }
+.skill-box:hover {
+    flex: 1 1 calc(45% - 20px); /* Two items per row */
+    background: #beb4b4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(69, 63, 63, 0.1);
+    text-align: center; /* Center text */
+    cursor: pointer;
+}
 .project{
     flex: 1 1 calc(45% - 20px); /* Two items per row */
     background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text */
+}
+.project:hover{
+    flex: 1 1 calc(45% - 20px); /* Two items per row */
+    background: #beb4b4;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
